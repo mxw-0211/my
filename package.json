@@ -1,0 +1,38 @@
+{
+  "name": "v",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prod": "webpack --config ./config/webpack.config.prod.js",
+    "dev": "webpack-dev-server --config ./config/webpack.config.dev.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.0.0",
+    "eslint": "^7.11.0",
+    "eslint-plugin-vue": "^7.1.0",
+    "html-webpack-plugin": "^4.5.0",
+    "node-fetch": "^2.6.1",
+    "sass": "^1.27.0",
+    "sass-loader": "^10.0.3",
+    "scss-loader": "0.0.1",
+    "style-loader": "^2.0.0",
+    "vue-loader": "^15.9.3",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2",
+    "webpack-merge": "^5.2.0"
+  },
+  "dependencies": {
+    "vue": "^2.6.12",
+    "vue-router": "^3.4.7",
+    "vuex": "^3.5.1"
+  }
+}
