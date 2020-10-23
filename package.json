@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prod": "webpack --config ./config/webpack.config.prod.js",
-    "dev": "webpack-dev-server --config ./config/webpack.config.dev.js"
+    "build": "cross-env NODE_ENV=production webpack --config ./config/webpack.config.prod.js",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config ./config/webpack.config.dev.js"
   },
   "keywords": [],
   "author": "",
@@ -14,15 +14,19 @@
   "devDependencies": {
     "cheerio": "^1.0.0-rc.3",
     "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^7.0.2",
     "css-loader": "^5.0.0",
     "eslint": "^7.11.0",
     "eslint-plugin-vue": "^7.1.0",
+    "file-loader": "^6.1.1",
     "html-webpack-plugin": "^4.5.0",
+    "mini-css-extract-plugin": "^1.1.2",
     "node-fetch": "^2.6.1",
     "sass": "^1.27.0",
     "sass-loader": "^10.0.3",
     "scss-loader": "0.0.1",
     "style-loader": "^2.0.0",
+    "url-loader": "^4.1.1",
     "vue-loader": "^15.9.3",
     "vue-template-compiler": "^2.6.12",
     "webpack": "^4.17.1",
@@ -31,6 +35,8 @@
     "webpack-merge": "^5.2.0"
   },
   "dependencies": {
+    "axios": "^0.20.0",
+    "element-ui": "^2.13.2",
     "vue": "^2.6.12",
     "vue-router": "^3.4.7",
     "vuex": "^3.5.1"
